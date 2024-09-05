@@ -1,0 +1,42 @@
+<resources>
+
+    <string name="app_name">ECR Demo</string>
+
+    <string name="ok">确定</string>
+    <string name="send">发送</string>
+    <string name="close">关闭</string>
+    <string name="cancel">取消</string>
+    <string name="connect">连接</string>
+    <string name="wait_connect">等待连接</string>
+
+    <string name="stop_send">停止发送</string>
+    <string name="stop_scan">停止扫描</string>
+
+    <string name="connected">已连接</string>
+    <string name="connecting">连接中</string>
+    <string name="disconnected">未连接</string>
+
+    <string name="type_usb">USB</string>
+    <string name="type_vsp">商米虚拟串口</string>
+    <string name="type_rs232">串口</string>
+    <string name="type_beacon">iBeacon</string>
+    <string name="type_bluetooth">蓝牙</string>
+    <string name="type_wifi">Wifi</string>
+    <string name="type_vsp_status">VSP连接状态</string>
+    <string name="type_extended_test">扩展测试界面</string>
+
+
+
+    <string name="dialog_device_type">请选择设备主从类型</string>
+    <string name="dialog_select_bluetooth">请选择蓝牙设备</string>
+    <string name="dialog_select_vsp_state">请选择是否开启USB线状态检测</string>
+
+
+    <string name="message_send_data">数据发送失败</string>
+    <string name="message_select_connect">请先断开连接，在选择通讯模式</string>
+    <string name="message_bind_ecr_service">绑定ECR Service失败</string>
+    <string name="message_bluetooth_disable">请先打开设备蓝牙功能</string>
+    <string name="message_bluetooth_not_support">该设备不支持蓝牙</string>
+    <string name="message_bluetooth_not_find_bonded">没有找到已配对的蓝牙</string>
+
+</resources>

@@ -1,0 +1,72 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+}
+
+android {
+    compileSdkVersion 31
+    defaultConfig {
+        applicationId "com.pos.ecr.demo"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 204
+        versionName "2.0.4"
+    }
+
+    signingConfigs {
+        sunmi {
+            keyAlias 'cashier'
+            keyPassword 'sunmi388'
+            storePassword 'sunmi388'
+            storeFile file("../app/cashier.jks")
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.sunmi
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.sunmi
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "sunmi-ecr-demo_" + defaultConfig.versionName + "_" + buildType.name + ".apk"
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    implementation 'com.google.android.material:material:1.3.0'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    implementation 'com.afollestad.material-dialogs:core:3.3.0'
+    implementation 'com.afollestad.material-dialogs:lifecycle:3.3.0'
+    implementation 'com.sunmi:sunmi-ecr-service:2.0.14@aar'
+
+}

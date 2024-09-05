@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_vsp"
+        android:title="@string/type_vsp" />
+
+    <item
+        android:id="@+id/item_usb"
+        android:title="@string/type_usb" />
+
+    <item
+        android:id="@+id/item_rs232"
+        android:title="@string/type_rs232" />
+
+    <item
+        android:id="@+id/item_beacon"
+        android:title="@string/type_beacon" />
+
+    <item
+        android:id="@+id/item_bluetooth"
+        android:title="@string/type_bluetooth" />
+
+    <item
+        android:id="@+id/item_wifi"
+        android:title="@string/type_wifi" />
+
+    <item
+        android:id="@+id/item_extended_test"
+        android:title="@string/type_extended_test" />
+
+
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data_bits">
+        <item>DATABITS_5</item>
+        <item>DATABITS_6</item>
+        <item>DATABITS_7</item>
+        <item>DATABITS_8</item>
+    </string-array>
+
+    <string-array name="parity">
+        <item>PARITY_NONE</item>
+        <item>PARITY_ODD</item>
+        <item>PARITY_EVEN</item>
+    </string-array>
+
+    <string-array name="stop_bits">
+        <item>STOPBITS_1</item>
+        <item>STOPBITS_2</item>
+    </string-array>
+
+    <string-array name="mode">
+        <item>VSP</item>
+        <item>USB</item>
+        <item>WIFI</item>
+        <item>RS232</item>
+        <item>iBeacon</item>
+        <item>Bluetooth</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>Master</item>
+        <item>Slave</item>
+    </string-array>
+
+
+
+</resources>
