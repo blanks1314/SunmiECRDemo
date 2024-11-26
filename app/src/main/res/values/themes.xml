@@ -24,4 +24,7 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
     </style>
 
+    <style name="Theme.AlertDialog.Base" parent="@style/Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="dialogCornerRadius">12dp</item>
+    </style>
 </resources>
