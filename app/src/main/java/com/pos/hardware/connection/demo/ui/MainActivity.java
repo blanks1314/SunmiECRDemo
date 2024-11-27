@@ -166,7 +166,7 @@ public class MainActivity extends BaseAppCompatActivity {
         Executors.newCachedThreadPool().execute(() -> {
             String text = binding.contentEdit.getText().toString();
             byte[] bytes = text.getBytes(StandardCharsets.UTF_8);
-            ChatBean chat = new ChatBean(text, App.server ? "Server" : "Client", App.server ? "Client" : "Server");
+            ChatBean chat = new ChatBean( App.server ? "Client" : "Server",text, App.server ? "Server" : "Client");
             Logger.e(App.TAG, "size: " + bytes.length);
             ECRHelper.send(bytes);
             chatList.add(chat);

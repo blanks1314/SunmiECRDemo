@@ -11,20 +11,10 @@ public class ChatBean {
     private String content;
     private String sender;
 
-    public ChatBean() {
-        this.id = String.valueOf(System.currentTimeMillis());
-        this.time = System.currentTimeMillis();
-        this.receiver = "";
-        this.content = "";
-        this.sender = "";
-    }
-
     public ChatBean(
             String receiver,
             String content,
             String sender) {
-
-
         this.receiver = receiver;
         this.content = content;
         this.sender = sender;
